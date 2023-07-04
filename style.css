@@ -1,0 +1,102 @@
+body{
+    width:90%;
+    margin:0 auto;
+}
+button{
+    background-color: black;
+    color:white;
+    border:none;
+    font-size: 12px;
+    padding:20px 100px 20px 100px;
+    border-radius: 10px;
+    box-shadow: 0 4px #999;
+}
+button:active{
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+#show-info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#show-info div{
+    font-size: 18px;
+    font-weight: bold;
+    width:33.33%;
+    margin-bottom: 12px;
+}
+#map{
+    width:100%;
+    height:60vh;
+}
+#show-map{
+    margin-bottom: 20px;
+}
+#tdpm div{
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+#search{
+    border:1px solid black;
+    width:80%;
+    margin:0 auto;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    height:2rem;
+}
+svg{
+    margin-left: 5px;
+}
+input{
+    margin-left:10px;  
+    border: none;
+    background: none;   
+    outline: none;
+    caret-color: black;
+    font-size: 1.2rem;    
+    width:95%;
+}
+#item-container{
+    margin-top: 40px;
+    border:1px solid black;
+    width:45%;
+    border-radius: 10px;
+}
+#item-container div{
+    padding:10px;
+    font-weight:bold ;
+    font-size: 20px;
+}
+#postOffice{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#container{
+    display: none;
+}
+
+#no-post{
+    width:100%;
+    text-align: center;
+}
+
+@media screen and (max-width:600px){
+
+    #item-container{
+        width:90%;
+    }
+    #postOffice{
+        justify-content: center;
+    }
+    #show-info{
+        display: block;
+    }
+    #show-info div{
+        width:100%;
+    }
+}
